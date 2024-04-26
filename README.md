@@ -43,7 +43,7 @@ This is the official repo for the paper "DPText-DETR: Towards Better Scene Text 
 
 ## Installation
 ```
-git clone https://github.com/ymy-k/DPText-DETR.git
+git clone https://github.com/rwood-97/DPText-DETR.git
 cd DPText-DETR
 pip install .
 ```
