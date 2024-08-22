@@ -10,11 +10,12 @@
   <a href="#Introduction">Introduction</a> |
   <a href="#Updates">Updates</a> |
   <a href="#Main Results">Main Results</a> |
-  <a href="#Usage">Usage</a> |
+  <a href="#Installation">Installation</a> |
   <a href="#Citation">Citation</a> |
   <a href="#Acknowledgment">Acknowledgement</a>
 </p >
-This is the official repo for the paper "DPText-DETR: Towards Better Scene Text Detection with Dynamic Points in Transformer", which is accepted to AAAI 2023.
+
+This is a fork of the official repo for the paper "DPText-DETR: Towards Better Scene Text Detection with Dynamic Points in Transformer", which is accepted to AAAI 2023.
 
 ## Introduction
 
@@ -23,6 +24,7 @@ This is the official repo for the paper "DPText-DETR: Towards Better Scene Text 
 **Abstract.** Recently, Transformer-based methods, which predict polygon points or Bezier curve control points for localizing texts, are popular in scene text detection. However, these methods built upon detection transformer framework might achieve sub-optimal training efficiency and performance due to coarse positional query modeling. In addition, the point label form exploited in previous works implies the reading order of humans, which impedes the detection robustness from our observation. To address these challenges, this paper proposes a concise Dynamic Point Text DEtection TRansformer network, termed DPText-DETR. In detail, DPText-DETR directly leverages explicit point coordinates to generate position queries and dynamically updates them in a progressive way. Moreover, to improve the spatial inductive bias of non-local self-attention in Transformer, we present an Enhanced Factorized Self-Attention module which provides point queries within each instance with circular shape guidance. Furthermore, we design a simple yet effective positional label form to tackle the side effect of the previous form. To further evaluate the impact of different label forms on the detection robustness in real-world scenario, we establish an Inverse-Text test set containing 500 manually labeled images. Extensive experiments prove the high training efficiency, robustness, and state-of-the-art performance of our method on popular benchmarks.
 
 ## Updates
+
 `[Apr.04, 2024]` Repo forked from [main repo](https://github.com/ymy-k/DPText-DETR/tree/main). **This fork may not reflect changes in the main repo from this point.**
 
 `[Mar.07, 2023]` The code and models of our latest work DeepSolo (CVPR 2023, [Code](https://github.com/ViTAE-Transformer/DeepSolo)) are released. :fire::fire:
@@ -43,7 +45,7 @@ This is the official repo for the paper "DPText-DETR: Towards Better Scene Text 
 
 ## Installation
 ```
-git clone https://github.com/rwood-97/DPText-DETR.git
+git clone https://github.com/maps-as-data/DPText-DETR.git
 cd DPText-DETR
 pip install .
 ```
