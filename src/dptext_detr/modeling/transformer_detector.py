@@ -7,11 +7,11 @@ from detectron2.modeling.meta_arch.build import META_ARCH_REGISTRY
 from detectron2.modeling import build_backbone
 from detectron2.structures import ImageList, Instances
 
-from adet.layers.pos_encoding import PositionalEncoding2D
-from adet.modeling.dptext_detr.losses import SetCriterion
-from adet.modeling.dptext_detr.matcher import build_matcher
-from adet.modeling.dptext_detr.models import DPText_DETR
-from adet.utils.misc import NestedTensor, box_xyxy_to_cxcywh
+from dptext_detr.layers.pos_encoding import PositionalEncoding2D
+from dptext_detr.modeling.dptext_detr.losses import SetCriterion
+from dptext_detr.modeling.dptext_detr.matcher import build_matcher
+from dptext_detr.modeling.dptext_detr.models import DPText_DETR
+from dptext_detr.utils.misc import NestedTensor, box_xyxy_to_cxcywh
 
 
 class Joiner(nn.Sequential):

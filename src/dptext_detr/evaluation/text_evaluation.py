@@ -20,11 +20,11 @@ from detectron2.evaluation.evaluator import DatasetEvaluator
 import glob
 import shutil
 from shapely.geometry import Polygon, LinearRing
-from adet.evaluation import text_eval_script
+from dptext_detr.evaluation import text_eval_script
 import zipfile
 import pickle
 
-from adet.evaluation.lexicon_procesor import LexiconMatcher
+from dptext_detr.evaluation.lexicon_procesor import LexiconMatcher
 
 NULL_CHAR = u'口'
 

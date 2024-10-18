@@ -20,7 +20,7 @@ from detectron2.evaluation.evaluator import DatasetEvaluator
 import glob
 import shutil
 from shapely.geometry import Polygon, LinearRing, Point, LineString
-from adet.evaluation import text_eval_script_det
+from dptext_detr.evaluation import text_eval_script_det
 import zipfile
 import pickle
 

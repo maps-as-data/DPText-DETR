@@ -39,10 +39,10 @@ from detectron2.solver.build import maybe_add_gradient_clipping
 from detectron2.modeling import GeneralizedRCNNWithTTA
 from detectron2.utils.logger import setup_logger
 
-from adet.data.dataset_mapper import DatasetMapperWithBasis
-from adet.config import get_cfg
-from adet.checkpoint import AdetCheckpointer
-from adet.evaluation import TextEvaluator,TextDetEvaluator
+from dptext_detr.data.dataset_mapper import DatasetMapperWithBasis
+from dptext_detr.config import get_cfg
+from dptext_detr.checkpoint import AdetCheckpointer
+from dptext_detr.evaluation import TextEvaluator,TextDetEvaluator
 
 
 class Trainer(DefaultTrainer):
@@ -79,7 +79,7 @@ class Trainer(DefaultTrainer):
         Args:
             start_iter, max_iter (int): See docs above
         """
-        logger = logging.getLogger("adet.trainer")
+        logger = logging.getLogger("dptext_detr.trainer")
         logger.info("Starting training from iteration {}".format(start_iter))
 
         self.iter = self.start_iter = start_iter
@@ -164,7 +164,7 @@ class Trainer(DefaultTrainer):
 
     @classmethod
     def test_with_TTA(cls, cfg, model):
-        logger = logging.getLogger("adet.trainer")
+        logger = logging.getLogger("dptext_detr.trainer")
         # In the end of training, run an evaluation with TTA
         # Only support some R-CNN models.
         logger.info("Running inference with test-time augmentation ...")
@@ -252,7 +252,7 @@ def setup(args):
     default_setup(cfg, args)
 
     rank = comm.get_rank()
-    setup_logger(cfg.OUTPUT_DIR, distributed_rank=rank, name="adet")
+    setup_logger(cfg.OUTPUT_DIR, distributed_rank=rank, name="dptext_detr")
 
     return cfg
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from collections import namedtuple
-from adet.evaluation import rrc_evaluation_funcs_det
+from dptext_detr.evaluation import rrc_evaluation_funcs_det
 import importlib
 import sys
 import json

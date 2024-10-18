@@ -1,3 +1,3 @@
-from adet import modeling
+from dptext_detr import modeling
 
-__version__ = "0.2.0-dptext-detr"
+__version__ = "0.0.1"

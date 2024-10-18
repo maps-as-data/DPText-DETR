@@ -12,8 +12,8 @@ import torch
 import torch.nn.functional as F
 from torch import nn
 from torch.nn.init import normal_
-from adet.utils.misc import inverse_sigmoid
-from adet.modeling.dptext_detr.utils import MLP, gen_point_pos_embed
+from dptext_detr.utils.misc import inverse_sigmoid
+from dptext_detr.modeling.dptext_detr.utils import MLP, gen_point_pos_embed
 from .ms_deform_attn import MSDeformAttn
 from timm.models.layers import DropPath
 

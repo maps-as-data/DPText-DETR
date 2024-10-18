@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: DPText-DETR
+Version: 0.0.1
+Summary: Text Detection framework based on AdelaiDet and Detectron2.
+Home-page: https://github.com/maps-as-data/DPText-DETR
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: termcolor>=1.1
+Requires-Dist: Pillow>=6.0
+Requires-Dist: yacs>=0.1.6
+Requires-Dist: tabulate
+Requires-Dist: cloudpickle
+Requires-Dist: matplotlib
+Requires-Dist: tqdm>4.29.0
+Requires-Dist: tensorboard
+Requires-Dist: rapidfuzz
+Requires-Dist: Polygon3
+Requires-Dist: shapely
+Requires-Dist: scikit-image
+Requires-Dist: editdistance
+Requires-Dist: opencv-python
+Requires-Dist: numba
+Provides-Extra: all
+Requires-Dist: psutil; extra == "all"

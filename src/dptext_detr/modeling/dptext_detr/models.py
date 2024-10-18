@@ -2,8 +2,8 @@ import numpy as np
 import torch
 from torch import nn
 import torch.nn.functional as F
-from adet.layers.deformable_transformer import DeformableTransformer_Det
-from adet.utils.misc import NestedTensor, inverse_sigmoid_offset, nested_tensor_from_tensor_list, sigmoid_offset
+from dptext_detr.layers.deformable_transformer import DeformableTransformer_Det
+from dptext_detr.utils.misc import NestedTensor, inverse_sigmoid_offset, nested_tensor_from_tensor_list, sigmoid_offset
 from .utils import MLP
 
 
