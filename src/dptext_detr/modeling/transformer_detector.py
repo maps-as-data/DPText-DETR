@@ -13,8 +13,8 @@ from dptext_detr.modeling.dptext_detr.matcher import build_matcher
 from dptext_detr.modeling.dptext_detr.models import DPText_DETR
 from dptext_detr.utils.misc import NestedTensor, box_xyxy_to_cxcywh
 
-# remove TransformerPureDetector from the registry if it exists
-META_ARCH_REGISTRY._obj_map.pop("TransformerPureDetector", None)
+# remove DPText_DETR_TransformerPureDetector from the registry if it exists
+META_ARCH_REGISTRY._obj_map.pop("DPText_DETR_TransformerPureDetector", None)
 
 class Joiner(nn.Sequential):
     def __init__(self, backbone, position_embedding):
@@ -97,7 +97,7 @@ def detector_postprocess(results, output_height, output_width):
 
 
 @META_ARCH_REGISTRY.register()
-class TransformerPureDetector(nn.Module):
+class DPText_DETR_TransformerPureDetector(nn.Module):
     def __init__(self, cfg):
         super().__init__()
         self.device = torch.device(cfg.MODEL.DEVICE)
