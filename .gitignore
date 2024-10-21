@@ -13,7 +13,7 @@ __pycache__
 _ext
 *.pyc
 *.so
-DPText-DETR.egg-info/
+*.egg-info/
 build/
 dist/
 
