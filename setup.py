@@ -67,7 +67,7 @@ setup(
     version="0.0.1",
     url="https://github.com/maps-as-data/DPText-DETR",
     description="Text Detection framework based on AdelaiDet and Detectron2.",
-    packages=find_packages("src/"),
+    packages=find_packages("src"),
     package_dir = {"": "src"},
     python_requires=">=3.9",
     install_requires=[
